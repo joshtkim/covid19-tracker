@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.layout-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.country {
+  border:black
+}
+
+.card {
+  border: black;
+  border: 10px;
+}

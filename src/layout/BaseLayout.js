@@ -30,11 +30,11 @@ const BaseLayout = () => {
 	}
 	
 	return (
-		<Layout>
+		<Layout className="layout-box">
 			<Header>Test</Header>
-			<Card/>
+			<Card data={data}/>
 			<Country handleCountryChange={handleCountryChange}/>
-			<Chart/>
+			<Chart data={data} country={country}/>
 		</Layout>
 	)
 
