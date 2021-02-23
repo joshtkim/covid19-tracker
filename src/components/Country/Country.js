@@ -18,18 +18,15 @@ const Country = ({ handleCountryChange }) => {
 	}, [setFetchedCountries]);
 
 	return (
-		<div className="country">
-			<Select
-				labelInValue
-				defaultValue={{ value: '' }}
-				style={{ width: 120 }}
-				onChange={(e) => handleCountryChange(e.target.value)}
-			>
-				<Option value="global">Global</Option>
-				{fetchedCountries.map((country, i) => <option key={i} value={country}>{country}</option>)}
-			</Select>
-		</div>
-
+		<Select
+			labelInValue
+			defaultValue={{ value: 'global' }}
+			style={{ width: 120 }}
+			onChange={(e) => handleCountryChange(e.target.value)}
+		>
+			<Option value="global">Global</Option>
+			{fetchedCountries.map((country, i) => <option key={i} value={country}>{country}</option>)}
+		</Select>
 	)
 
 }
