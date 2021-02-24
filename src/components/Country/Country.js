@@ -22,7 +22,7 @@ const Country = ({ handleCountryChange }) => {
 			labelInValue
 			defaultValue={{ value: 'global' }}
 			style={{ width: 120 }}
-			onChange={(e) => handleCountryChange(e.target.value)}
+			onChange={(e) => handleCountryChange(e.value)}
 		>
 			<Option value="global">Global</Option>
 			{fetchedCountries.map((country, i) => <option key={i} value={country}>{country}</option>)}

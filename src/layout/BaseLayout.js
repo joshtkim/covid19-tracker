@@ -24,11 +24,15 @@ const BaseLayout = () => {
 	}, []);
 
 	let handleCountryChange = async (country) => {
+		// let selectedCountry = country.value
 		const fetchedData = await fetchData(country);
 
 		setData(fetchedData);
 		setCountry(country);
 	}
+
+	console.log(country)
+	console.log(data)
 	
 	return (
 		<Layout className="layout-box">

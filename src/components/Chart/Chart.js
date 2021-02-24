@@ -52,8 +52,6 @@ const Chart = () => {
     },
   };
 
-  console.log(data)
-
 
   return (
     <Line {...config} />
