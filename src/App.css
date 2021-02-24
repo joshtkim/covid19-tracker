@@ -17,3 +17,10 @@ body {
   border: black;
   border: 10px;
 }
+
+.site-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  background: #ececec;
+}

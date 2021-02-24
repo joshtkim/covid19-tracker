@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Col, Layout, Row, Typography } from "antd";
 import Country from "../components/Country/Country";
-import Card from "../components/Card/Card";
+import Cards from "../components/Card/Card";
 import Chart from "../components/Chart/Chart";
 import { fetchData } from '../api'
+import 'antd/dist/antd.css';
 
 const { Header, Content, Footer } = Layout;
 
@@ -32,7 +33,7 @@ const BaseLayout = () => {
 	return (
 		<Layout className="layout-box">
 			<Header>Test</Header>
-			<Card data={data}/>
+			<Cards data={data}/>
 			<Country handleCountryChange={handleCountryChange}/>
 			<Chart data={data} country={country}/>
 		</Layout>
