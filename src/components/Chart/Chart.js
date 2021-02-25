@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 import { fetchDailyData } from '../../api';
-import { Line } from '@ant-design/charts';
+import { Line, Bar } from '@ant-design/charts';
 
-const Chart = () => {
+const Chart = ( country ) => {
   const [dailyData, setDailyData] = useState([])
 
   useEffect(() => {
@@ -52,9 +52,21 @@ const Chart = () => {
     },
   };
 
+  const barData = [];
+
+
+  const barChart = (
+    <Bar height={200} title="Country" data={barData} />
+  )
+
+  const lineChart = (
+    <Line {...config} />
+  )
 
   return (
-    <Line {...config} />
+    <div>
+      {country ? barChart : lineChart}
+    </div>
   )
 
 }
