@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Col, Row, Typography } from 'antd';
+import React from 'react';
+import { Card, Typography } from 'antd';
 import CountUp from 'react-countup';
 
 
@@ -12,7 +12,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate }}) => {
 
 
 	return (
-		<div className="site-card-wrapper">
+		<div className="data-card-wrapper">
 			<Card>
 				<Title level={3} type="warning">Infected</Title>
 				<Text type="warning">

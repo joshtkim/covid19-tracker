@@ -29,10 +29,6 @@ const Chart = ( country ) => {
     { date: date[2], confirmed: confirmed[2] },
     { date: date[3], confirmed: confirmed[3] },
     { date: date[4], confirmed: confirmed[4] },
-    { date: date[5], confirmed: confirmed[5] },
-    { date: date[6], confirmed: confirmed[6] },
-    { date: date[7], confirmed: confirmed[7] },
-    { date: date[8], confirmed: confirmed[8] },
   ]
 
   const config = {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Col, Layout, Row, Typography } from "antd";
+import { Layout } from "antd";
 import Country from "../components/Country/Country";
 import Cards from "../components/Card/Card";
 import Chart from "../components/Chart/Chart";
