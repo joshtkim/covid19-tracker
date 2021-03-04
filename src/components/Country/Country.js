@@ -12,7 +12,7 @@ const Country = ({ handleCountryChange }) => {
 
 	useEffect(() => {
 			const fetchAPI = async () => {
-					setFetchedCountries(await fetchCountries());
+				setFetchedCountries(await fetchCountries());
 			}
 			fetchAPI();
 	}, [setFetchedCountries]);
