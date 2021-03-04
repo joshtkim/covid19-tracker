@@ -61,7 +61,7 @@ const Chart = ( country ) => {
 
   return (
     <div>
-      {country ? barChart : lineChart}
+      {lineChart}
     </div>
   )
 

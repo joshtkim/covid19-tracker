@@ -36,7 +36,7 @@ const BaseLayout = () => {
 	
 	return (
 		<Layout className="layout-box">
-			<Header>Test</Header>
+			<Header>Covid19 Tracker</Header>
 			<Cards data={data}/>
 			<Country handleCountryChange={handleCountryChange}/>
 			<Chart data={data} country={country}/>

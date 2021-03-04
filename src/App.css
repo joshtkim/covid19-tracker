@@ -9,18 +9,15 @@ body {
   flex-direction: column;
 }
 
-.country {
-  border:black
-}
-
-.card {
-  border: black;
-  border: 10px;
-}
-
-.site-card-wrapper {
+.data-card-wrapper {
   display: flex;
   flex-direction: row;
   padding: 30px;
   background: #ececec;
+}
+
+.ant-layout-header,
+.ant-layout-footer {
+  color: #fff;
+  background: #7dbcea;
 }
